@@ -1,0 +1,15 @@
+.phone-input-container {
+}
+
+/* Nesting is required to beat the built-in style specificity. */
+.phone-input-container .phone-input {
+  height: 38px;
+  width: 100%;
+}
+.phone-input-container .phone-input:global(.is-invalid) {
+  border-color: #dc3545;
+}
+
+.phone-input-container .phone-dropdown {
+  overflow-y: auto;
+}

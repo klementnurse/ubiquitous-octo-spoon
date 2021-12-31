@@ -1,0 +1,56 @@
+/*
+ Shared by a few layout component
+*/
+
+@media only screen and (min-width: 1224px) {
+  .container {
+    margin-top: 64px;
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1224px) {
+  .container {
+    margin-top: 64px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
+.container {
+  background-color: #fff;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.content {
+  padding: 16px 24px;
+  padding-top: 24px;
+  min-height: 300px;
+}
+
+.footer {
+  align-items: center;
+  background-color: #e7e7e7;
+  /* Required when page background is customized. */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header {
+  background-color: #e7e7e7;
+  padding: 24px;
+}
